@@ -27,7 +27,7 @@ namespace binary1<br>
         }<br>
     }<br>
 }<br>
-    
+  ++++++++++++++++++++++++++++++++++++++++++++++++++<br>
 
 //C# pgm to implement Principle of Delegate//
 using System;<br>
@@ -70,7 +70,7 @@ Output
 
 :![Screenshot (2)](https://user-images.githubusercontent.com/98145090/152288860-affa08d6-4919-4cbb-8704-fe6ed52b2c28.png)<br>
 
-
+++++++++++++++++++++++++++++++++++++++++++++++++++<br>
 
 //c# pgm to generate reg num automatically//
 using System;<br>
@@ -102,6 +102,36 @@ namespace Exercises<br>
 Output:
 
 ![Screenshot (4)](https://user-images.githubusercontent.com/98145090/152291643-6e0d773d-ae49-4169-84ef-ae063ff9f6ae.png)<br>
+++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+//c# pgm to print "is"//
+using System;<br>
+namespace Exercises<br>
+{<br>
+    class FrequencyIS<br>
+    {<br>
+        static void Main(string[] args)<br>
+        {<br>
+            int count=0;<br>
+            string inputString;<br>
+            Console.WriteLine("\n ------Frequency of Word is-------");<br>
+            Console.Write("\n Enter the input string:");<br>
+            inputString=Console.ReadLine();<br>
+            char[] separator ={',', ' ', '.' , '!', '\n'};<br>
+            string testString=inputString.ToLower();<br>
+            String[] outcomes=testString.Split(separator)<br>;
+            foreach(String s in outcomes)<br>
+            {<br>
+                Console.WriteLine(s);<br>
+                if (s=="is")<br>
+                    count++;<br>
+            }<br>
+            Console.WriteLine("\n Number of 'is' in'"+ inputString +"' is :" + count);<br>
+            }<br>
+        }<br>
+    }<br>
+    Output:
+    ![Screenshot 2022-02-03 123614](https://user-images.githubusercontent.com/98145090/152297579-4229752c-625f-47e1-96ea-78a8e838589b.png)<br>
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
 
 
 
