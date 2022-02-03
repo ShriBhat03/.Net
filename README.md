@@ -132,6 +132,106 @@ namespace Exercises<br>
     Output:
     ![Screenshot 2022-02-03 123614](https://user-images.githubusercontent.com/98145090/152297579-4229752c-625f-47e1-96ea-78a8e838589b.png)<br>
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+  //c# pgm for matrix entry//
+  using System;<br>
+namespace Exercises<br>
+{<br>
+class SumOfDiagonals<br>
+    {<br>
+        static void Main(string[] args)<br>
+        {<br>
+            int MaxRow, MaxCol, Sum = 0;<br>
+            int[,] Matrix;<br>
+            Console.WriteLine("\n SUM OF DIAGONAL OF A MATRIX \n");<br>
+            Console.Write("\nEnter the number of rows:");<br>
+            MaxRow = Convert.ToInt32(Console.ReadLine());<br>
+            Console.Write("\nEnter the number of columns:");<br>
+            MaxCol = Convert.ToInt32(Console.ReadLine());<br>
+            if (MaxRow != MaxCol)<br>
+            {<br>
+                Console.WriteLine("\nThe Dimensions entered are not of Square Matrix:");<br>
+                Console.WriteLine("\nExiting the Program..");<br>
+                return;<br>
+            }<br>
+            Matrix = new int[MaxRow, MaxCol];<br>
+            for (int i = 0; i < MaxRow; i++)<br>
+            {<br><br>
+                for (int j = 0; j < MaxCol; j++)<br>
+                {<br>
+                    Console.Write("\nEnter the ({0},{l})th element of the matrix: ", (i + 1), (j + 1));<br>
+                    Matrix[i, j] = Convert.ToInt32(Console.ReadLine());<br>
+                }<br>
+            }<br>
+            Console.WriteLine("\nThe entered Matrix is:");<br>
+            for (int i = 0; i < MaxRow; i++)<br>
+            {
+                for (int j = 0; j < MaxCol; j++)<br>
+                {<br>
+                    Console.Write(" " + Matrix[i, j]);<br>
+                    if (i == j)<br>
+                    {<br>
+                        Sum += Matrix[i, j];<br>
+                    }<br>
+                }<br>
 
+                Console.WriteLine();<br>
+            }<br>
+                Console.WriteLine("\nThe Sum of Diagonal is " + Sum);<br>
+            }<br>
+        }<br>
+    }<br>
+    Output:
+    
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+    //c# pgm to 2D//
+    using System;<br>
+using System.Diagnostics;<br>
+namespace array<br>
+{<br>
+    class Benchmarkallocation<br>
+        {<br>
+        const int max= 100000;<br>
+    static void Main(string[] args)<br>
+    {<br>
+        var Arr2D = new int[100, 100];<br>
+        var ArrJagged = new int[100][];<br>
+        for (int i = 0; i < 100; i++)<br>
+        {<br>
+            ArrJagged[i] = new int[100];<br>
+        }<br>
+        var Stopwatch2D = Stopwatch.StartNew();<br>
+        for (int i = 0; i < max; i++)<br>
+        {<br>
+            for (int j = 0; j < 100; j++)<br>
+            {<br>
+                for (int k = 0; k < 100; k++)<br>
+                {<br>
+                    Arr2D[j, k] = k;<br>
+                }<br>
+            }<br>
+        }<br>
+        Stopwatch2D.Stop();<br>
+        var StopwatchJagged = Stopwatch.StartNew();<br>
+        for (int i = 0; i < max; i++)<br>
+        {<br>
+            for (int j = 0; j < 100; j++)<br>
+            {<br>
+                for (int k = 0; k < 100; k++)<br>
+                {<br>
+                    ArrJagged[j][k] = k;<br>
+                }<br>
+            }<br>
+        }<br>
+        StopwatchJagged.Stop();<br>
+        Console.Write("\n time taken for allocation in case of 2D array:");<br>
+        Console.WriteLine(Stopwatch2D.Elapsed.TotalMilliseconds + "milliseconds");<br>
+        Console.Write("\n time taken for allocation in case of jagged array:");<br>
+        Console.WriteLine(StopwatchJagged.Elapsed.TotalMilliseconds + "milliseconds");<br>
+    }<br>
+}<br>
+}<br>
+Output:
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
 
 
