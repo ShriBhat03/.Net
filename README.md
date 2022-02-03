@@ -65,7 +65,9 @@ using System;<br>
         }<br>
  }<br>
 }<br>
-Output:![Screenshot (2)](https://user-images.githubusercontent.com/98145090/152288860-affa08d6-4919-4cbb-8704-fe6ed52b2c28.png)
+Output
+
+:![Screenshot (2)](https://user-images.githubusercontent.com/98145090/152288860-affa08d6-4919-4cbb-8704-fe6ed52b2c28.png)
 
 
 
