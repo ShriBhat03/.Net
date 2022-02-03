@@ -1,4 +1,5 @@
 # .Net
+//c# pgm for binary num//
 using System;<br>
 
 namespace binary1<br>
@@ -67,7 +68,40 @@ using System;<br>
 }<br>
 Output
 
-:![Screenshot (2)](https://user-images.githubusercontent.com/98145090/152288860-affa08d6-4919-4cbb-8704-fe6ed52b2c28.png)
+:![Screenshot (2)](https://user-images.githubusercontent.com/98145090/152288860-affa08d6-4919-4cbb-8704-fe6ed52b2c28.png)<br>
+
+
+
+//c# pgm to generate reg num automatically//
+using System;<br>
+namespace Exercises<br>
+{<br>
+    class RegisterNum<br>
+    {<br>
+        int regNo;<br>
+        static int startNum;<br>
+        static  RegisterNum()<br>
+        {<br>
+            startNum = 20210000;<br>
+        }<br>
+        RegisterNum()<br>
+        {<br>
+        regNo=++startNum;<br>
+        }<br>
+        public static void Main(String[] args)<br>
+        {<br>
+            for(int i=0;i<100;i++)<br>
+            {<br>
+                RegisterNum Student = new RegisterNum();<br>
+                Console.WriteLine("student{0}:{1}", i+1, Student.regNo);<br>
+                    }<br>
+        }<br>
+    }<br>
+}<br>
+
+Output:
+
+![Screenshot (4)](https://user-images.githubusercontent.com/98145090/152291643-6e0d773d-ae49-4169-84ef-ae063ff9f6ae.png)<br>
 
 
 
