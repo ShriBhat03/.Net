@@ -182,7 +182,8 @@ namespace Exercises<br>
 
            
     Output:
-    ![Screenshot 2022-02-04 105752](https://user-images.githubusercontent.com/98145090/152477696-b94a46e9-747c-4a77-b424-fa0230c0bd90.png)
+   
+![Screenshot 2022-02-04 105752](https://user-images.githubusercontent.com/98145090/152479030-66e920c5-c139-4623-98d6-d2e5080989eb.png)
 
     
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
@@ -458,4 +459,6 @@ namespace Exercises<br>
     }<br>
 }<br>
 Output:
+![image](https://user-images.githubusercontent.com/98145090/152478908-4e9365b4-913e-4bac-a437-62ab3104fbb7.png)
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
