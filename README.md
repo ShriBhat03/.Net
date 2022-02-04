@@ -132,7 +132,7 @@ namespace Exercises<br>
     Output:
     ![Screenshot 2022-02-03 123614](https://user-images.githubusercontent.com/98145090/152297579-4229752c-625f-47e1-96ea-78a8e838589b.png)<br>
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
-  5)//c# pgm for matrix entry//<br>
+  5)//c# pgm for sum of diagonal matrix entry//<br>
    using System;<br>
 namespace Exercises<br>
 {<br>
