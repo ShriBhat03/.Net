@@ -343,4 +343,33 @@ namespace Exercises<br>
 Output:
 
 ![Screenshot 2022-02-04 103545](https://user-images.githubusercontent.com/98145090/152475390-17adb240-d4e0-4857-ae83-9e4dd8a113ca.png)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+8) //c# pgm to gray code//
+using System;<br>
 
+namespace Exercises<br>
+{<br>
+    class GrayCode<br>
+    {<br>
+        static int getGray(int n)<br>
+        {<br>
+            return n^(n>>1);<br>
+        }<br>
+        static void Main(string[] args)<br>
+        {<br>
+            int InputNum, GrayNum;<br>
+            Console.Write("\nEnter the decimal number:");<br>
+            InputNum = Convert.ToInt32(Console.ReadLine());<br>
+            Console.Write("\n Binary equivalent of {0} : {1}",InputNum,Convert.ToString(InputNum,2));<br>
+<br>
+            GrayNum = getGray(InputNum);<br>
+            Console.Write("\n GrayCode equivalent of {0} : {1}", InputNum, Convert.ToString(GrayNum, 2));<br>
+        }<br>
+    }<br>
+}<br>
+ Output:
+ 
+ 
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
