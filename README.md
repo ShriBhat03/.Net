@@ -1,5 +1,5 @@
 # .Net
-//c# pgm for binary num//<br>
+1)//c# pgm for binary num//<br>
 using System;<br>
 
 namespace binary1<br>
@@ -29,7 +29,7 @@ namespace binary1<br>
 }<br>
   ++++++++++++++++++++++++++++++++++++++++++++++++++<br>
 
-//C# pgm to implement Principle of Delegate//<br>
+2)//C# pgm to implement Principle of Delegate//<br>
 using System;<br>
  namespace Exercises<br>
 {<br>
@@ -72,7 +72,7 @@ Output
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++<br>
 
-//c# pgm to generate reg num automatically//<br>
+3)//c# pgm to generate reg num automatically//<br>
 using System;<br>
 namespace Exercises<br>
 {<br>
@@ -103,7 +103,7 @@ Output:
 
 ![Screenshot (4)](https://user-images.githubusercontent.com/98145090/152291643-6e0d773d-ae49-4169-84ef-ae063ff9f6ae.png)<br>
 ++++++++++++++++++++++++++++++++++++++++++++++++++<br>
-//c# pgm to print "is"//<br>
+4)//c# pgm to print "is"//<br>
 using System;<br>
 namespace Exercises<br>
 {<br>
@@ -132,7 +132,7 @@ namespace Exercises<br>
     Output:
     ![Screenshot 2022-02-03 123614](https://user-images.githubusercontent.com/98145090/152297579-4229752c-625f-47e1-96ea-78a8e838589b.png)<br>
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
-  //c# pgm for matrix entry//<br>
+  5)//c# pgm for matrix entry//<br>
   using System;<br>
 namespace Exercises<br>
 {<br>
@@ -182,7 +182,7 @@ class SumOfDiagonals<br>
     Output:
     
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
-    //c# pgm to 2D//<br>
+ 6)   //c# pgm to 2D//<br>
     using System;<br>
 using System.Diagnostics;<br>
 namespace array<br>
@@ -235,7 +235,7 @@ Output:
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
-//c# pgm for personnel detailes//<br>
+7)//c# pgm for personnel detailes//<br>
 using System;<br>
 namespace Exercises<br>
 {<br>
