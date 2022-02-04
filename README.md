@@ -182,9 +182,9 @@ namespace Exercises<br>
 
            
     Output:
-    
-    ![Screenshot 2022-02-04 105752](https://user-images.githubusercontent.com/98145090/152477603-309e4d85-0724-415c-b40d-bf9972a60cf4.png)
+    ![Screenshot 2022-02-04 105752](https://user-images.githubusercontent.com/98145090/152477696-b94a46e9-747c-4a77-b424-fa0230c0bd90.png)
 
+    
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
  6)   //c# pgm to 2D//<br>
     using System;<br>
