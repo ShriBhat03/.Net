@@ -368,8 +368,6 @@ namespace Exercises<br>
     }<br>
 }<br>
  Output:
- 
- 
-
+ ![image](https://user-images.githubusercontent.com/98145090/152478001-3c867ff9-0a0f-43ff-b882-8024d901d0c5.png)
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
