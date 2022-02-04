@@ -232,6 +232,9 @@ namespace array<br>
 }<br>
 Output:
 
+![Screenshot 2022-02-04 102241](https://user-images.githubusercontent.com/98145090/152474175-653874c6-c178-48f1-913c-42d06668cd1b.png)
+
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
 
 
