@@ -173,7 +173,6 @@ class SumOfDiagonals<br>
                         Sum += Matrix[i, j];<br>
                     }<br>
                 }<br>
-
                 Console.WriteLine();<br>
             }<br>
                 Console.WriteLine("\nThe Sum of Diagonal is " + Sum);<br>
