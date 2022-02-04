@@ -1,32 +1,34 @@
 # .Net
 1)//c# pgm for binary num//<br>
-using System;<br>
+using System;
+namespace binary1
+{
+class binary1
+{
+static void Main(string[] args)
+{
+int number, digit = 1;
+Console.WriteLine("\n enter the number of lines:");
+number = Convert.ToInt32(Console.ReadLine());
+for (int i = 1; i <= number; i++)
+{ for (int space = number - i; space > 0; space--)
+{
+Console.Write(" ");
+}
+for (int j = 0; j < i; j++)
+{
+Console.Write(digit + " ");
+digit = (digit == 1) ? 0 : 1;
+}
+Console.Write("\n");
+}
+}
+}
+}
+Output:
 
-namespace binary1<br>
-{<br>
-    class binary1<br>
-    {<br>
-        static void Main(string[] args)<br>
-        {<br>
-            int number, digit = 1;<br>
-            Console.WriteLine("\n enter the number of lines:");<br>
-            number = Convert.ToInt32(Console.ReadLine());<br>
-            for (int i = 1; i <= number; i++)<br>
-            {
-                for (int space = number - i; space > 0; space--)<br>
-                {<br>
-                    Console.Write(" ");<br>
-                }<br>
-                for (int j = 0; j < i; j++)<br>
-                {<br>
-                    Console.Write(digit + "");<br>
-                    digit = (digit == 1) ? 0 : 1;<br>
-                }<br>
-                Console.Write("\n");<br>
-            }<br>
-        }<br>
-    }<br>
-}<br>
+![image](https://user-images.githubusercontent.com/98145090/152480600-26d6e300-784a-4a14-bacb-b440e14a687b.png)
+
   ++++++++++++++++++++++++++++++++++++++++++++++++++<br>
 
 2)//C# pgm to implement Principle of Delegate//<br>
