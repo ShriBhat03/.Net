@@ -342,9 +342,9 @@ namespace Exercises<br>
 
 Output:
 
-![Screenshot 2022-02-04 103545](https://user-images.githubusercontent.com/98145090/152475390-17adb240-d4e0-4857-ae83-9e4dd8a113ca.png)
+![Screenshot 2022-02-04 103545](https://user-images.githubusercontent.com/98145090/152475390-17adb240-d4e0-4857-ae83-9e4dd8a113ca.png)<br>
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
-8) //c# pgm to gray code//
+8) //c# pgm to gray code//<br>
 using System;<br>
 
 namespace Exercises<br>
