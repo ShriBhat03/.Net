@@ -182,6 +182,8 @@ namespace Exercises<br>
 
            
     Output:
+    ![Screenshot 2022-02-04 105752](https://user-images.githubusercontent.com/98145090/152477156-800303e4-14ab-4158-9dd4-f0817975211f.png)
+
     
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
  6)   //c# pgm to 2D//<br>
