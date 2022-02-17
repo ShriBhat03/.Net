@@ -464,3 +464,121 @@ Output:
 ![image](https://user-images.githubusercontent.com/98145090/152478908-4e9365b4-913e-4bac-a437-62ab3104fbb7.png)
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+11)//c# pgm to create a file , Check the existence of a file//<br>
+using System;<br>
+using System.IO;<br>
+namespace Exercise<br>
+{<br>
+    class FileRead<br>
+    {<br>
+        public static void Main()<br>
+        {<br>
+            string fileName;<br>
+            while (true)<br>
+            {<br>
+                Console.WriteLine("\n.......MENU......\n");<br>
+                Console.WriteLine("\n1.Create a File");<br>
+                Console.WriteLine("\n2.Existence of the File");<br>
+                Console.WriteLine("\n3.Read the contents of the File");<br>
+                Console.WriteLine("\n4.Exit");<br>
+                Console.WriteLine("\nEnter your choice:");<br>
+                int ch = int.Parse(Console.ReadLine());<br>
+                switch (ch)<br>
+                {<br>
+                    case 1:<br>
+                        Console.Write("\nEnter the file name to create:");<br>
+                        fileName = Console.ReadLine();<br>
+                        Console.WriteLine("\nWrite the Contents to the File:\n");<br>
+                        string r = Console.ReadLine();<br>
+                        using (StreamWriter fileStr = File.CreateText(fileName))<br>
+                        {<br>
+                            fileStr.WriteLine(r);<br>
+                        }<br>
+                        Console.WriteLine("File is Created...");<br>
+                        break;<br>
+                    case 2:<br>
+                        Console.Write("\nEnter the file name:");<br>
+                        fileName = Console.ReadLine();<br>
+                        if (File.Exists(fileName))<br>
+                        {<br>
+                            Console.WriteLine("File exits...");<br>
+                        }<br>
+                        else<br>
+                        {<br>
+                            Console.WriteLine("File does not exits in the current directory!");<br>
+                        }<br>
+                        break;<br>
+                    case 3:<br>
+                        Console.Write("Enter the file name to read the contents:\n");<br>
+                        fileName = Console.ReadLine();<br>
+                        if (File.Exists(fileName))<br>
+                        {<br>
+                            using (StreamReader sr = File.OpenText(fileName))<br>
+                            {<br>
+                                string s = "";<br>
+                                Console.WriteLine(" Here is the content of the file : ");<br>
+                                while ((s = sr.ReadLine()) != null)<br>
+                                {<br>
+                                    Console.WriteLine(s);<br>
+                                }<br>
+                                Console.WriteLine("");<br>
+                            }<br>
+                        }<br>
+                        else<br>
+                        {<br>
+                            Console.WriteLine("File does not exists");<br>
+                        }<br>
+                        break;<br>
+                    case 4:<br>
+                        Console.WriteLine("\n Exiting...");<br>
+                        return;<br>
+                    default:<br>
+                        Console.WriteLine("\n Invalid choice");<br>
+                        break;<br>
+            }<br>
+        }<br>
+    }<br>
+}<br>
+Output:<br>
+1-<br>![exis 1](https://user-images.githubusercontent.com/98145090/154413141-56c36639-0ef7-4daf-ae17-a00694399718.png)<br>
+2-<br>![exis 2](https://user-images.githubusercontent.com/98145090/154413878-c6c32399-f59d-405d-bba0-72eb00686c25.png)<br>
+3-<br>![exis 3](https://user-images.githubusercontent.com/98145090/154413955-c3c109d8-368f-4bfa-887d-04f73fef2609.png)<br>
+4-<br>![exis 4](https://user-images.githubusercontent.com/98145090/154413972-0ab90235-a9d4-47f6-b8cb-7f73529fd09b.png)<br>
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ <br>
+12)//C# Program to Perform File Comparison.//<br>
+using System;<br>
+using System.IO;<br>
+namespace Exercises<br>
+{<br>
+ class FileRead<br>
+ {<br>
+ public static void Main()<br>
+ {<br>
+ string file1;<br>
+ string file2;<br>
+ Console.Write("Enter the first file path:");<br>
+ file1 = Console.ReadLine();<br>
+ Console.Write("Enter the second file path:");<br>
+ file2 = Console.ReadLine();<br>
+ if (!File.Exists(file1))<br>
+ {<br>
+ Console.WriteLine("First file does not exist!");<br>
+ }<br>
+ else if (!File.Exists(file2))<br>
+ {<br>
+ Console.WriteLine("Second file does not exist!");<br>
+ }<br>
+ else if (File.ReadAllText(file1) == File.ReadAllText(file2))<br>
+ {<br>
+ Console.WriteLine("Both files contain the same content");<br>
+ }<br>
+ else<br>
+ {<br>
+ Console.WriteLine("Contents of files are not same");<br>
+ }<br>
+ }<br>
+ }<br>
+}<br>
+
+
+Output:<br>
