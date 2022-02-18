@@ -680,6 +680,50 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/98145090/154628176-9235a479-9d98-4e8f-adc4-81da971190eb.png)<br>
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
-15<br>
-Output:<br>
+15 //c# pgm to demonstrate error handling using try , catch and finally block//<br>
+using System;<br>
+namespace Exercises<br>
+{<br>
+    class ExceptionHandling<br>
+    {<br>
+        static void Main(string[] args)<br>
+        {<br>
+            Age a = new Age();<br>
+            try<br>
+            {<br>
+                a.displayAge();<br>
+            }<br>
+            catch (AgeIsNegativeException e)<br>
+            {<br>
+                Console.WriteLine("AgeIsNegativeException: {0}", e.Message);<br>
+            }<br>
+            finally<br>
+            {<br>
+                Console.WriteLine("Execution of Finally block is done.");<br>
+            }<br>
+        }<br>
+    }<br>
+}<br>
+public class AgeIsNegativeException : Exception<br>
+{<br>
+    public AgeIsNegativeException(string message) : base(message)<br>
+    {<br>
+    }<br>
+}<br>
+public class Age<br>
+{<br>
+    int age = -5;<br>
+    public void displayAge()<br>
+    {<br>
+        if (age < 0)<br>
+        {<br>
+            throw (new AgeIsNegativeException("Age cannot be negative"));<br>
+        }<br>
+        else<br>
+        {<br>
+            Console.WriteLine("Age is: {0}", age);<br>
+        }<br>
+    }<br>
+}<br>
+Output:![image](https://user-images.githubusercontent.com/98145090/154629983-3f6abf48-c40e-4a0f-a26e-f30e1f890abf.png)<br>
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
