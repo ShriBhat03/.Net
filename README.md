@@ -582,3 +582,47 @@ namespace Exercises<br>
 
 
 Output:<br>
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+13)<br>
+Output:<br>
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+14)//c# pgm to create Thread Pools//<br>
+using System;<br>
+using System.Threading;<br>
+namespace Exercises<br>
+{<br>
+    class ThreadPoolProg<br>
+    {<br>
+        public void ThreadFun1(object obj)<br>
+        {<br>
+            int loop = 0;<br>
+            for (loop = 0; loop <= 4; loop++)<br>
+            {<br>
+                Console.WriteLine("Thread1 is executing");<br>
+            }<br>
+        }<br>
+        public void ThreadFun2(object obj)<br>
+        {<br>
+            int loop = 0;<br>
+            for (loop = 0; loop <= 4; loop++)<br>
+                Console.WriteLine("Thread 2 is executing");<br>
+        }<br>
+        public static void Main()<br>
+        {<br>
+            ThreadPoolProg TP = new ThreadPoolProg();<br>
+            for (int i = 0; i < 2; i++)<br>
+            {<br>
+                ThreadPool.QueueUserWorkItem(new WaitCallback(TP.ThreadFun1));<br>
+                ThreadPool.QueueUserWorkItem(new WaitCallback(TP.ThreadFun2));<br>
+            }<br>
+            Console.ReadKey();<br>
+        }<br>
+    }<br>
+}<br>
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/98145090/154628176-9235a479-9d98-4e8f-adc4-81da971190eb.png)<br>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+15<br>
+Output:<br>
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
