@@ -728,7 +728,7 @@ public class Age<br>
 Output:![image](https://user-images.githubusercontent.com/98145090/154629983-3f6abf48-c40e-4a0f-a26e-f30e1f890abf.png)<br>
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
 
-16.C# program to find fibonacci:
+16.//C# program to find fibonacci//
 using System;
 
 public class Fibonacci<br>
@@ -751,9 +751,11 @@ public class Fibonacci<br>
 
 
 Output:
+![FIBO](https://user-images.githubusercontent.com/98145090/156509546-83b7e4ca-9088-4df5-9700-cfd128aef476.png)
+
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
-17.**C# program to check whether entered number is prime or not**<br>
+17.//C# program to check whether entered number is prime or not//<br>
 using System;<br>
 public class PrimeNumber<br>
 {<br>
@@ -777,10 +779,12 @@ public class PrimeNumber<br>
     }<br>
 }<br>
 
-**Output**<br>
+**Output**:
+![image](https://user-images.githubusercontent.com/98145090/156509997-dc30d18b-d212-4062-9dc7-7e594cdacd26.png)<br>
+ ![image](https://user-images.githubusercontent.com/98145090/156512247-9cd8a3dc-d17a-4b79-8883-90b87fb280da.png)<br>
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
-18.**C# program to check whethe the entered number is palindrome or not.**<br><br>
+18.//C# program to check whethe the entered number is palindrome or not//<br><br>
 
 using System;<br>
 public class Palindrome<br>
@@ -804,10 +808,11 @@ public class Palindrome<br>
     }<br>
 }<br>
 
-**Output**<br>
+**Output**![image](https://user-images.githubusercontent.com/98145090/156513064-0e26c442-faf0-4db4-9e81-de56174ba810.png) <br>
+           ![image](https://user-images.githubusercontent.com/98145090/156513249-dd9d5559-5042-47ab-a318-a61f334338fc.png)<br>
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
-19.**C# program to find the factorial of the number**<br>
+19.//C# program to find the factorial of the number//<br>
 
 using System;<br>
 public class Factorial<br>
@@ -825,11 +830,11 @@ public class Factorial<br>
     }<br>
 }<br>
 
-**Output**<br>
+**Output** ![image](https://user-images.githubusercontent.com/98145090/156514839-9c484731-1030-46ae-b4ff-7953d0bfadd0.png)<br>
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
 
-20.**C# program to check the armstrong number**<br>
+20.//C# program to check the armstrong number//<br>
 
 using System;<br>
 public class Armstrong<br>
@@ -853,11 +858,12 @@ public class Armstrong<br>
     }<br>
 }<br>
 
-**Output**<br>
+**Output** ![image](https://user-images.githubusercontent.com/98145090/156515500-d586ae18-5c53-45e9-90a2-ffe981ff84b2.png)<br>
+            ![image](https://user-images.githubusercontent.com/98145090/156515742-39229c3a-637f-41c3-9334-65764942f39c.png)<br>
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
 
-21.**C# program to check the sum of the numbers**<br>
+21.//C# program to check the sum of the numbers//<br>
 
 using System;<br>
 public class Sum<br>
@@ -877,11 +883,11 @@ public class Sum<br>
     }<br>
 }<br>
 
-**Output**<br>
+**Output** ![image](https://user-images.githubusercontent.com/98145090/156516147-e9fbcac2-cd0b-4426-8a69-37fac9a25a1f.png)<br>
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
 
-22.**C# program to reverese a number**<br>
+22.//C# program to reverese a number//<br>
 
 using System;<br>
 public class Reverse<br>
@@ -901,7 +907,7 @@ public class Reverse<br>
     }<br>
 }<br>
 
-**Output**<br>
+**Output** ![image](https://user-images.githubusercontent.com/98145090/156516595-25cfc545-239c-4c3f-b829-511fad31b4be.png)<br>
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
-
+23.//c# pgm to //
