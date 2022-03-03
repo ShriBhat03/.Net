@@ -727,3 +727,181 @@ public class Age<br>
 }<br>
 Output:![image](https://user-images.githubusercontent.com/98145090/154629983-3f6abf48-c40e-4a0f-a26e-f30e1f890abf.png)<br>
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+
+16.C# program to find fibonacci:
+using System;
+
+public class Fibonacci<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int n1 = 0, n2 = 1, n3, i, number;<br>
+        Console.Write("Enter the number of elements: ");<br>
+        number = int.Parse(Console.ReadLine());<br>
+        Console.Write(n1 + " " + n2 + " "); //printing 0 and 1<br>    
+        for (i = 2; i < number; ++i) //loop starts from 2 because 0 and 1 are already printed<br>    
+        {<br>
+            n3 = n1 + n2;<br>
+            Console.Write(n3 + " ");<br>
+            n1 = n2;<br>
+            n2 = n3;<br>
+        }<br>
+    }<br>
+}<br>
+
+
+Output:
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+17.**C# program to check whether entered number is prime or not**<br>
+using System;<br>
+public class PrimeNumber<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int n, i, m = 0, flag = 0;<br>
+        Console.Write("Enter the Number to check Prime: ");<br>
+        n = int.Parse(Console.ReadLine());<br>
+        m = n / 2;<br>
+        for (i = 2; i <= m; i++)<br>
+        {<br>
+            if (n % i == 0)<br>
+            {<br>
+                Console.Write("Not is not Prime.");<br>
+                flag = 1;<br>
+                break;<br>
+            }<br>
+        }<br>
+        if (flag == 0)<br>
+            Console.Write("Number is Prime.");<br>
+    }<br>
+}<br>
+
+**Output**<br>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+18.**C# program to check whethe the entered number is palindrome or not.**<br><br>
+
+using System;<br>
+public class Palindrome<br>
+{<br><br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int n, r, sum = 0, temp;<br>
+        Console.Write("Enter the Number: ");<br>
+        n = int.Parse(Console.ReadLine());<br>
+        temp = n;<br>
+        while (n > 0)<br>
+        {<br>
+            r = n % 10;<br>
+            sum = (sum * 10) + r;<br>
+            n = n / 10;<br>
+        }<br>
+        if (temp == sum)<br>
+            Console.Write("Number is Palindrome.");<br>
+        else<br>
+            Console.Write("Number is not Palindrome");<br>
+    }<br>
+}<br>
+
+**Output**<br>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+19.**C# program to find the factorial of the number**<br>
+
+using System;<br>
+public class Factorial<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int i, fact = 1, number;<br>
+        Console.Write("Enter any Number: ");<br>
+        number = int.Parse(Console.ReadLine());<br>
+        for (i = 1; i <= number; i++)<br>
+        {<br>
+            fact = fact * i;<br>
+        }<br>
+        Console.Write("Factorial of " + number + " is: " + fact);<br><br>
+    }<br>
+}<br>
+
+**Output**<br>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+
+20.**C# program to check the armstrong number**<br>
+
+using System;<br>
+public class Armstrong<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int n, r, sum = 0, temp;<br>
+        Console.Write("Enter the Number= ");<br>
+        n = int.Parse(Console.ReadLine());<br>
+        temp = n;<br>
+        while (n > 0)<br>
+        {<br>
+            r = n % 10;<br>
+            sum = sum + (r * r * r);<br>
+            n = n / 10;<br>
+        }<br>
+        if (temp == sum)<br>
+            Console.Write("Armstrong Number.");<br>
+        else<br>
+            Console.Write("Not Armstrong Number.");<br>
+    }<br>
+}<br>
+
+**Output**<br>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+
+21.**C# program to check the sum of the numbers**<br>
+
+using System;<br>
+public class Sum<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int n, sum = 0, m;<br>
+        Console.Write("Enter a number: ");<br>
+        n = int.Parse(Console.ReadLine());<br>
+        while (n > 0)<br>
+        {<br>
+            m = n % 10;<br>
+            sum = sum + m;<br>
+            n = n / 10;<br>
+        }<br>
+        Console.Write("Sum is= " + sum);<br>
+    }<br>
+}<br>
+
+**Output**<br>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+
+22.**C# program to reverese a number**<br>
+
+using System;<br>
+public class Reverse<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int n, reverse = 0, rem;<br>
+        Console.Write("Enter a number: ");<br>
+        n = int.Parse(Console.ReadLine());<br>
+        while (n != 0)<br>
+        {<br>
+            rem = n % 10;<br>
+            reverse = reverse * 10 + rem;<br>
+            n /= 10;<br>
+        }<br>
+        Console.Write("Reversed Number: " + reverse);<br>
+    }<br>
+}<br>
+
+**Output**<br>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+
