@@ -1,5 +1,5 @@
 # .Net
-1)//c# pgm for binary num//<br>
+1)//c# pgm for binary triangle//<br>
 using System;<br>
 namespace binary1<br>
 {<br>
